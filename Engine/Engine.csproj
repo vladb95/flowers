@@ -37,8 +37,15 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="xNet">
+      <HintPath>..\..\..\Visual Studio new projects\requestMaster\requestMaster\bin\Debug\xNet.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Auth\AccInfo.cs" />
+    <Compile Include="Auth\Auth.cs" />
+    <Compile Include="Auth\GlobalAccountConfig.cs" />
+    <Compile Include="Auth\LogininfConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
