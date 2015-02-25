@@ -20,7 +20,7 @@ namespace Engine.Parsing
 
         public string GetUrl()
         {
-            string url;
+            string url="";
             return url;
         }
     }

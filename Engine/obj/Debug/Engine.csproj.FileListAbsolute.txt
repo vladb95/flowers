@@ -1,1 +1,4 @@
-D:\GitHub\flowers\Engine\obj\Debug\Engine.csprojResolveAssemblyReference.cache
+D:\GitHub\flowers\Engine\bin\Debug\Engine.dll
+D:\GitHub\flowers\Engine\bin\Debug\Engine.pdb
+D:\GitHub\flowers\Engine\obj\Debug\Engine.dll
+D:\GitHub\flowers\Engine\obj\Debug\Engine.pdb
