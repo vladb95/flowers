@@ -8,5 +8,6 @@ namespace Engine.Auth
         public string Pass { get; set; }
         public bool AuthInfo { get; set; }
         public CookieDictionary Cookies { get; set; }
+        public GlobalAccountConfig Config { get; set; }
     }
 }

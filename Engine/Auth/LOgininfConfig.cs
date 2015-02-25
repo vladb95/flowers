@@ -5,7 +5,7 @@ namespace Engine.Auth
 {
     internal class LogininfConfig
     {
-        List<AccInfo> _accountList =new List<AccInfo>();
+        readonly List<AccInfo> _accountList =new List<AccInfo>();
 
         public void AddAccount(string login, string pass)
         {
@@ -18,6 +18,30 @@ namespace Engine.Auth
                 }.GetInfo;
 
                 _accountList.Add(info);
+            }
+            catch { }
+        }
+
+        public List<AccInfo> GetAccountList
+        {
+            get
+            {
+                BadRemover();
+                return _accountList;
+            }
+        }
+
+        void BadRemover()
+        {
+            try
+            {
+                for (var i = 0; i < _accountList.Count; i++)
+                {
+                    if (!_accountList[i].AuthInfo)
+                    {
+                        _accountList.RemoveAt(i);
+                    }
+                }
             }
             catch { }
         }

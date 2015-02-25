@@ -46,6 +46,7 @@
     <Compile Include="Auth\Auth.cs" />
     <Compile Include="Auth\GlobalAccountConfig.cs" />
     <Compile Include="Auth\LogininfConfig.cs" />
+    <Compile Include="Config\InfoContainer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
