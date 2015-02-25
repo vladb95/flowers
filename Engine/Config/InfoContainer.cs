@@ -7,6 +7,5 @@ namespace Engine.Config
     {
         public static List<string> MessList { get; set; }
         public static ArrayList IdList =new ArrayList();
-        public string g { get; set; }
     }
 }
