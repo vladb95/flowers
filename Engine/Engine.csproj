@@ -48,7 +48,10 @@
     <Compile Include="Auth\LogininfConfig.cs" />
     <Compile Include="Config\InfoContainer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Wallker\IWalk.cs" />
+    <Compile Include="Wallker\WalkDirector.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

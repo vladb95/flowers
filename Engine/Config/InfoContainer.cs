@@ -5,8 +5,8 @@ namespace Engine.Config
 {
     public static class InfoContainer
     {
-        public static List<string> MessList { get; set; }
+        public static List<string> MessList =new List<string>();
+        public static List<string> CommentsList =new List<string>();
         public static ArrayList IdList =new ArrayList();
-        public string g { get; set; }
     }
 }
