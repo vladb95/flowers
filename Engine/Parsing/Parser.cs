@@ -21,11 +21,10 @@ namespace Engine.Parsing
                 {
                     request.Cookies = parametrs.Cookies;
                     request.UserAgent = HttpHelper.RandomUserAgent();
-                    var response = request.Get("").ToString();
-                    InfoContainer.IdList.AddRange(response.Substrings(parametrs.BeforeId, parametrs.AfterId));
-                    if (!response.Contains(""))
+                    var response = request.Get(parametrs.GetUrl()).ToString();
+                    if (!response.Contains("Результаты поиска"))
                         return false;
-
+                    InfoContainer.IdList.AddRange(response.Substrings(parametrs.BeforeId, parametrs.AfterId));
                 }
             }
             catch { return false; }
